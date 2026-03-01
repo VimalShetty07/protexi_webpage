@@ -10,9 +10,9 @@ export default function TrustStrip() {
         <div className="flex flex-wrap justify-center gap-3">
           {[
             { icon: "🏆", text: "UKVI Approved Workflows", cls: "badge-blue" },
-            { icon: "🔒", text: "ISO 27001 Compliant",     cls: "badge-violet" },
-            { icon: "⭐", text: "4.9/5 Customer Rating",   cls: "badge-amber" },
-            { icon: "🇬🇧", text: "UK Data Hosting",        cls: "badge-emerald" },
+            { icon: "🔒", text: "ISO 27001 Compliant",     cls: "badge-blue" },
+            { icon: "⭐", text: "4.9/5 Customer Rating",   cls: "badge-blue" },
+            { icon: "🇬🇧", text: "UK Data Hosting",        cls: "badge-blue" },
           ].map((item) => (
             <div key={item.text} className={`badge ${item.cls}`}>{item.icon} {item.text}</div>
           ))}

@@ -9,10 +9,10 @@ const faqs = [
   { q: "What happens if a worker's visa expiry is missed?",    a: "Protexi sends escalating alerts at 90, 60, 30, and 7 days before expiry. If an expiry passes without action, the profile is auto-flagged 'Action Required' and your HR admin receives an urgent notification." },
   { q: "Does Protexi integrate with our existing HR system?",  a: "Growth and Enterprise plans include API access. Enterprise includes pre-built connectors for Workday, BambooHR, HiBob, and major ATS systems. Custom integrations also available." },
   { q: "What support is available?",                           a: "Starter includes email support. Growth adds live chat. Enterprise includes a dedicated compliance account manager, phone support, and a guaranteed 4-hour response SLA." },
-  { q: "Do you offer a free trial?",                           a: "Yes! Starter and Growth plans come with a 14-day free trial — no credit card required. Full feature access from day one. Book a demo and we'll set yours up immediately." },
+  { q: "Can I book a demo?",                           a: "Yes. You can book a personalised demo and we will walk you through workflows, setup, and the best plan for your team." },
 ];
 
-const leftColors = ["border-l-[#1657ad]","border-l-violet-500","border-l-pink-500","border-l-cyan-500","border-l-amber-500","border-l-emerald-500","border-l-[#1657ad]","border-l-violet-500"];
+const leftColors = ["border-l-[#1657ad]","border-l-blue-600","border-l-blue-600","border-l-blue-600","border-l-blue-600","border-l-blue-600","border-l-[#1657ad]","border-l-blue-600"];
 
 export default function FAQ() {
   const [open, setOpen] = useState<number | null>(null);
@@ -20,11 +20,10 @@ export default function FAQ() {
   return (
     <section id="faq" className="py-28 bg-white relative overflow-hidden">
       <div className="absolute inset-0 dot-grid opacity-30" />
-      <div className="absolute top-1/2 -translate-y-1/2 left-0 w-[400px] h-[400px] bg-cyan-50 rounded-full blur-[120px] pointer-events-none opacity-80" />
+      <div className="absolute top-1/2 -translate-y-1/2 left-0 w-[400px] h-[400px] bg-blue-50 rounded-full blur-[120px] pointer-events-none opacity-80" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
-          <div className="flex justify-center mb-4"><div className="badge badge-cyan">❓ Frequently Asked</div></div>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-4">
             Got questions?<br /><span className="gradient-text-blue">We&apos;ve got answers.</span>
           </h2>

@@ -19,7 +19,7 @@ export const pricingPlans: Plan[] = [
     period: "/month",
     teamSize: "Up to 25 sponsored workers",
     description: "Perfect for small businesses taking their first step towards automated compliance.",
-    cta: "Start Free Trial",
+    cta: "Book a Demo",
     highlighted: false,
     features: [
       "Visa expiry tracking (up to 25)",
@@ -60,7 +60,7 @@ export const pricingPlans: Plan[] = [
     period: "",
     teamSize: "Unlimited sponsored workers",
     description: "Full-scale compliance infrastructure for large organisations and legal teams.",
-    cta: "Contact Sales",
+    cta: "Book a Demo",
     highlighted: false,
     features: [
       "Everything in Growth",
@@ -72,8 +72,8 @@ export const pricingPlans: Plan[] = [
       "White-label options",
       "On-boarding & training sessions",
     ],
-    color: "from-purple-900/20 to-slate-900/60",
-    borderColor: "border-purple-500/20",
+    color: "from-blue-900/20 to-slate-900/60",
+    borderColor: "border-blue-500/20",
   },
 ];
 

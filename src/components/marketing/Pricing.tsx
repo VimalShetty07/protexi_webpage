@@ -3,8 +3,8 @@ import Card3D from "./Card3D";
 
 function Check({ active }: { active: boolean }) {
   return active ? (
-    <span className="flex items-center justify-center w-5 h-5 rounded-full bg-emerald-100 border border-emerald-200">
-      <svg className="w-3 h-3 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <span className="flex items-center justify-center w-5 h-5 rounded-full bg-blue-100 border border-blue-200">
+      <svg className="w-3 h-3 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
       </svg>
     </span>
@@ -21,12 +21,11 @@ export default function Pricing() {
   return (
     <section id="pricing" className="py-28 bg-white relative overflow-hidden">
       <div className="absolute inset-0 dot-grid opacity-30" />
-      <div className="absolute top-0 right-1/4 w-[600px] h-[500px] bg-violet-50 rounded-full blur-[140px] pointer-events-none opacity-80" />
+      <div className="absolute top-0 right-1/4 w-[600px] h-[500px] bg-blue-50 rounded-full blur-[140px] pointer-events-none opacity-80" />
       <div className="absolute bottom-0 left-1/4 w-[500px] h-[400px] bg-blue-50 rounded-full blur-[120px] pointer-events-none opacity-80" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <div className="flex justify-center mb-4"><div className="badge badge-violet">💰 Simple Pricing</div></div>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-4">
             Plans that grow<br /><span className="gradient-text">with your team.</span>
           </h2>
@@ -75,8 +74,8 @@ export default function Pricing() {
               </div>
             ) : (
               <Card3D key={plan.name}
-                className={`card-l2 border-t-4 ${i === 2 ? "border-t-violet-500" : "border-t-slate-200"}`}
-                shadowColor={i === 2 ? "rgba(124,58,237,0.12)" : "rgba(22,87,173,0.1)"}
+                className={`card-l2 border-t-4 ${i === 2 ? "border-t-blue-600" : "border-t-slate-200"}`}
+                shadowColor={i === 2 ? "rgba(22,87,173,0.12)" : "rgba(22,87,173,0.1)"}
                 intensity={8}>
                 <div className="p-7 flex flex-col">
                   <div className="mb-6">
@@ -92,7 +91,7 @@ export default function Pricing() {
                   <ul className="space-y-2.5 flex-1 mb-8">
                     {plan.features.map((f) => (
                       <li key={f} className="flex items-start gap-2.5 text-sm">
-                        <svg className="w-4 h-4 mt-0.5 shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg className="w-4 h-4 mt-0.5 shrink-0 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                         </svg>
                         <span className="text-slate-600">{f}</span>
@@ -119,7 +118,7 @@ export default function Pricing() {
                   <th className="px-6 py-4 text-left text-sm font-semibold text-slate-500">Feature</th>
                   <th className="px-6 py-4 text-center text-sm font-semibold text-slate-500">Starter</th>
                   <th className="px-6 py-4 text-center text-sm font-bold text-[#1657ad] bg-blue-50/60">Growth</th>
-                  <th className="px-6 py-4 text-center text-sm font-semibold text-violet-600">Enterprise</th>
+                  <th className="px-6 py-4 text-center text-sm font-semibold text-blue-700">Enterprise</th>
                 </tr>
               </thead>
               <tbody>

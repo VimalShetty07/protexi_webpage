@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-[#06122b] text-white py-16 relative overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#1657ad] via-[#7c3aed] via-[#f43f5e] to-[#06b6d4]" />
+      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#1657ad] via-[#2563eb] to-[#0f3f86]" />
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[250px] bg-blue-700/10 rounded-full blur-[80px]" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -37,7 +37,7 @@ export default function Footer() {
         <div className="border-t border-white/6 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-600">© {new Date().getFullYear()} Protexi Ltd. All rights reserved. Registered in England & Wales.</p>
           <div className="flex items-center gap-2 text-sm text-slate-600">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />All systems operational
+            <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />All systems operational
           </div>
         </div>
       </div>

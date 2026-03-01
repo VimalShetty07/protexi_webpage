@@ -7,24 +7,24 @@ const useCases = [
     headline: "Stop drowning in compliance admin.",
     desc: "Protexi automates the repetitive tasks that eat your HR team's time — document chasing, deadline tracking, and worker record management.",
     bullets: ["Automated onboarding compliance workflows","One-click right-to-work document collection","Real-time worker status dashboard","Bulk visa expiry alerts and renewals","Mobile-friendly for remote HR teams"],
-    metrics: [{ label: "Hours saved/week", value: "12hrs", color: "text-[#1657ad]", bg: "bg-blue-50 border-blue-100" }, { label: "Workers tracked", value: "142", color: "text-violet-600", bg: "bg-violet-50 border-violet-100" }, { label: "Docs automated", value: "89%", color: "text-emerald-600", bg: "bg-emerald-50 border-emerald-100" }] },
-  { tab: "Compliance",  icon: "🛡️", activeTab: "bg-violet-600 text-white shadow-lg shadow-violet-200",  cardTop: "border-t-violet-500", shadow: "rgba(124,58,237,0.12)",
+    metrics: [{ label: "Hours saved/week", value: "12hrs", color: "text-[#1657ad]", bg: "bg-blue-50 border-blue-100" }, { label: "Workers tracked", value: "142", color: "text-blue-700", bg: "bg-blue-50 border-blue-100" }, { label: "Docs automated", value: "89%", color: "text-blue-700", bg: "bg-blue-50 border-blue-100" }] },
+  { tab: "Compliance",  icon: "🛡️", activeTab: "bg-blue-700 text-white shadow-lg shadow-blue-200",  cardTop: "border-t-blue-600", shadow: "rgba(22,87,173,0.12)",
     headline: "Be audit-ready 365 days a year.",
     desc: "Built for compliance managers who need certainty. Know your exposure, close your gaps, and face any UKVI inspection with confidence.",
     bullets: ["Live compliance health score","Automated audit-pack generation","Gap analysis and remediation tracking","UKVI reporting deadline calendar","Regulatory change notifications"],
-    metrics: [{ label: "Compliance score", value: "97%", color: "text-emerald-600", bg: "bg-emerald-50 border-emerald-100" }, { label: "Open gaps", value: "2", color: "text-amber-600", bg: "bg-amber-50 border-amber-100" }, { label: "Audit-ready docs", value: "100%", color: "text-[#1657ad]", bg: "bg-blue-50 border-blue-100" }] },
-  { tab: "Leadership",  icon: "📈", activeTab: "bg-pink-600 text-white shadow-lg shadow-pink-200",      cardTop: "border-t-pink-500",   shadow: "rgba(244,63,94,0.12)",
+    metrics: [{ label: "Compliance score", value: "97%", color: "text-blue-700", bg: "bg-blue-50 border-blue-100" }, { label: "Open gaps", value: "2", color: "text-blue-700", bg: "bg-blue-50 border-blue-100" }, { label: "Audit-ready docs", value: "100%", color: "text-[#1657ad]", bg: "bg-blue-50 border-blue-100" }] },
+  { tab: "Leadership",  icon: "📈", activeTab: "bg-blue-700 text-white shadow-lg shadow-blue-200",      cardTop: "border-t-blue-600",   shadow: "rgba(22,87,173,0.12)",
     headline: "Full visibility. Zero surprises.",
     desc: "Compliance risk is business risk. Protexi gives leadership a real-time view of your organisation's compliance posture — without wading through reports.",
     bullets: ["Executive compliance summary dashboard","CoS budget utilisation and forecast","Risk exposure by department","Trend analytics and historical reports","Integration-ready data exports"],
-    metrics: [{ label: "Licence risk", value: "Low", color: "text-emerald-600", bg: "bg-emerald-50 border-emerald-100" }, { label: "CoS remaining", value: "34/50", color: "text-[#1657ad]", bg: "bg-blue-50 border-blue-100" }, { label: "Next review", value: "Mar 15", color: "text-pink-600", bg: "bg-pink-50 border-pink-100" }] },
+    metrics: [{ label: "Licence risk", value: "Low", color: "text-blue-700", bg: "bg-blue-50 border-blue-100" }, { label: "CoS remaining", value: "34/50", color: "text-[#1657ad]", bg: "bg-blue-50 border-blue-100" }, { label: "Next review", value: "Mar 15", color: "text-blue-700", bg: "bg-blue-50 border-blue-100" }] },
 ];
 
 const activity = [
-  { text: "Visa alert sent — Sarah T.", time: "2m ago",  dot: "bg-emerald-400" },
+  { text: "Visa alert sent — Sarah T.", time: "2m ago",  dot: "bg-blue-500" },
   { text: "Document uploaded — R. Patel", time: "1hr ago", dot: "bg-[#1657ad]" },
-  { text: "CoS used — New hire onboarded", time: "3hr ago", dot: "bg-violet-500" },
-  { text: "Compliance check passed",      time: "1d ago", dot: "bg-amber-400" },
+  { text: "CoS used — New hire onboarded", time: "3hr ago", dot: "bg-blue-500" },
+  { text: "Compliance check passed",      time: "1d ago", dot: "bg-blue-500" },
 ];
 
 export default function UseCases() {
@@ -34,11 +34,11 @@ export default function UseCases() {
   return (
     <section className="py-28 bg-white relative overflow-hidden">
       <div className="absolute inset-0 dot-grid opacity-30" />
-      <div className="absolute top-0 right-0 w-[500px] h-[400px] bg-pink-50 rounded-full blur-[120px] pointer-events-none opacity-80" />
+      <div className="absolute top-0 right-0 w-[500px] h-[400px] bg-blue-50 rounded-full blur-[120px] pointer-events-none opacity-80" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <div className="flex justify-center mb-4"><div className="badge badge-cyan">👥 Built For Every Team</div></div>
+          <div className="flex justify-center mb-4"><div className="badge badge-blue">👥 Built For Every Team</div></div>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-4">
             Protexi works for<br /><span className="gradient-text">your whole organisation.</span>
           </h2>
@@ -63,8 +63,8 @@ export default function UseCases() {
             <ul className="space-y-3 mb-10">
               {c.bullets.map((b) => (
                 <li key={b} className="flex items-center gap-3 text-slate-700 text-sm font-medium">
-                  <div className="w-5 h-5 rounded-full bg-emerald-100 flex items-center justify-center shrink-0">
-                    <svg className="w-3 h-3 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
+                    <svg className="w-3 h-3 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
@@ -85,7 +85,7 @@ export default function UseCases() {
               <div className="flex items-center gap-2 mb-6">
                 <span className="text-2xl">{c.icon}</span>
                 <span className="text-sm font-bold text-slate-700">Live Dashboard Preview</span>
-                <div className="ml-auto px-2 py-0.5 rounded-full bg-emerald-100 border border-emerald-200 text-xs font-bold text-emerald-700">● Live</div>
+                <div className="ml-auto px-2 py-0.5 rounded-full bg-blue-100 border border-blue-200 text-xs font-bold text-blue-700">● Live</div>
               </div>
               <div className="grid grid-cols-3 gap-3 mb-6">
                 {c.metrics.map((m) => (

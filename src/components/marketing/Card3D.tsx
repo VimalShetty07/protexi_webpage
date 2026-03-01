@@ -23,20 +23,20 @@ export default function Card3D({
     const rect = el.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width;   // 0..1
     const y = (e.clientY - rect.top)  / rect.height;  // 0..1
-    const rx =  (y - 0.5) * -intensity * 2;
-    const ry =  (x - 0.5) *  intensity * 2;
+    const rx =  (y - 0.5) * -intensity * 1.3;
+    const ry =  (x - 0.5) *  intensity * 1.3;
 
-    el.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateZ(20px) scale(1.02)`;
+    el.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateZ(8px) scale(1.01)`;
     el.style.boxShadow = `
-      ${-(x-0.5)*30}px ${-(y-0.5)*30}px 60px ${shadowColor},
-      0 32px 80px rgba(0,0,0,0.07),
-      0 8px 20px rgba(22,87,173,0.06),
+      ${-(x-0.5)*20}px ${-(y-0.5)*20}px 40px ${shadowColor},
+      0 20px 48px rgba(0,0,0,0.055),
+      0 6px 14px rgba(22,87,173,0.045),
       inset 0 1px 0 rgba(255,255,255,1)
     `;
 
     if (glareRef.current) {
-      glareRef.current.style.background = `radial-gradient(circle at ${x*100}% ${y*100}%, rgba(255,255,255,0.5) 0%, transparent 65%)`;
-      glareRef.current.style.opacity = "1";
+      glareRef.current.style.background = `radial-gradient(circle at ${x*100}% ${y*100}%, rgba(255,255,255,0.35) 0%, transparent 70%)`;
+      glareRef.current.style.opacity = "0.75";
     }
   }, [intensity, shadowColor]);
 

@@ -4,30 +4,30 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white pt-16">
       {/* Dot grid */}
-      <div className="absolute inset-0 dot-grid opacity-60" />
+      <div className="absolute inset-0 dot-grid opacity-35" />
 
       {/* Colour blobs — pure white bg means we use tinted blobs for depth */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-48 -left-48 w-[700px] h-[700px] rounded-full bg-blue-100 blur-[140px] animate-glow-pulse opacity-70" />
-        <div className="absolute -top-24 right-[-100px] w-[550px] h-[550px] rounded-full bg-violet-100 blur-[120px] animate-glow-pulse opacity-60" style={{ animationDelay: "2s" }} />
-        <div className="absolute bottom-[-80px] left-[30%] w-[500px] h-[400px] rounded-full bg-sky-100 blur-[110px] animate-glow-pulse opacity-60" style={{ animationDelay: "1s" }} />
-        <div className="absolute bottom-0 right-[10%] w-[400px] h-[400px] rounded-full bg-indigo-100 blur-[100px] opacity-50" />
+        <div className="absolute -top-48 -left-48 w-[620px] h-[620px] rounded-full bg-blue-100 blur-[110px] animate-glow-pulse opacity-50" />
+        <div className="absolute -top-24 right-[-100px] w-[480px] h-[480px] rounded-full bg-blue-100 blur-[95px] animate-glow-pulse opacity-42" style={{ animationDelay: "2s" }} />
+        <div className="absolute bottom-[-80px] left-[30%] w-[430px] h-[340px] rounded-full bg-sky-100 blur-[90px] animate-glow-pulse opacity-40" style={{ animationDelay: "1s" }} />
+        <div className="absolute bottom-0 right-[10%] w-[340px] h-[340px] rounded-full bg-blue-100 blur-[82px] opacity-35" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="text-center lg:text-left">
             {/* Headline */}
-            <h1 className="text-5xl md:text-7xl xl:text-[82px] font-black tracking-tight leading-[1.02] mb-6 text-[#1657ad] animate-slide-up">
+            <h1 className="text-4xl md:text-6xl xl:text-[72px] font-black tracking-tight leading-[1.02] mb-6 text-[#1657ad] animate-slide-up">
               UK Sponsor<br />
               <span className="text-[#0f3f86]">Compliance,</span><br />
               Simplified.
             </h1>
 
             <p className="text-xl text-slate-500 max-w-2xl lg:max-w-xl mx-auto lg:mx-0 mb-10 leading-relaxed animate-slide-up" style={{ animationDelay: "0.15s" }}>
-              Stay audit-ready, automate visa tracking, and eliminate manual compliance work.
-              Protexi protects your sponsor licence —{" "}
-              <span className="font-bold text-slate-800">without the stress.</span>
+              Keep every sponsored worker record current, catch visa and document deadlines early, and stop chasing teams for updates in spreadsheets.
+              Protexi brings your UKVI-ready evidence, SMS reporting dates, and right-to-work records into one place —{" "}
+              <span className="font-bold text-slate-800">so audits feel controlled, not rushed.</span>
             </p>
 
             {/* CTAs */}
@@ -58,9 +58,9 @@ export default function Hero() {
               {/* Browser bar */}
               <div className="bg-[#f1f5f9] border-b border-slate-200/80 px-5 py-3.5 flex items-center gap-3">
                 <div className="flex gap-1.5">
-                  <span className="w-3 h-3 rounded-full bg-red-400" style={{ boxShadow: "0 0 8px rgba(248,113,113,0.7)" }} />
-                  <span className="w-3 h-3 rounded-full bg-yellow-400" style={{ boxShadow: "0 0 8px rgba(250,204,21,0.7)" }} />
-                  <span className="w-3 h-3 rounded-full bg-emerald-400" style={{ boxShadow: "0 0 8px rgba(52,211,153,0.7)" }} />
+                  <span className="w-3 h-3 rounded-full bg-slate-500" style={{ boxShadow: "0 0 8px rgba(100,116,139,0.5)" }} />
+                  <span className="w-3 h-3 rounded-full bg-slate-400" style={{ boxShadow: "0 0 8px rgba(148,163,184,0.5)" }} />
+                  <span className="w-3 h-3 rounded-full bg-blue-500" style={{ boxShadow: "0 0 8px rgba(59,130,246,0.6)" }} />
                 </div>
                 <div className="flex-1 max-w-xs mx-auto bg-white border border-slate-200 rounded-lg h-6 flex items-center justify-center px-3 gap-1.5"
                   style={{ boxShadow: "inset 0 1px 3px rgba(0,0,0,0.06)" }}>
@@ -80,9 +80,9 @@ export default function Hero() {
                     <div className="text-slate-400 text-xs mt-0.5">February 2026 · 142 active workers</div>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="px-3 py-1.5 rounded-lg bg-emerald-100 border border-emerald-200 text-xs font-bold text-emerald-700"
-                      style={{ boxShadow: "0 2px 8px rgba(16,185,129,0.2)" }}>● Live</div>
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#1657ad] to-violet-500 flex items-center justify-center text-xs font-black text-white"
+                    <div className="px-3 py-1.5 rounded-lg bg-blue-100 border border-blue-200 text-xs font-bold text-blue-700"
+                      style={{ boxShadow: "0 2px 8px rgba(22,87,173,0.2)" }}>● Live</div>
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#1657ad] to-blue-700 flex items-center justify-center text-xs font-black text-white"
                       style={{ boxShadow: "0 4px 12px rgba(22,87,173,0.4)" }}>HR</div>
                   </div>
                 </div>
@@ -91,9 +91,9 @@ export default function Hero() {
                 <div className="grid grid-cols-4 gap-3 mb-5">
                   {[
                     { label: "Active Workers", value: "142", sub: "+3 this month", text: "text-[#1657ad]",   sub_c: "text-blue-400",   glow: "rgba(22,87,173,0.14)",   top: "border-t-2 border-t-[#1657ad]" },
-                    { label: "Expiring Soon",  value: "7",   sub: "Within 30 days",text: "text-amber-600",  sub_c: "text-amber-400",  glow: "rgba(245,158,11,0.14)",  top: "border-t-2 border-t-amber-400" },
-                    { label: "Pending Docs",   value: "23",  sub: "Action needed", text: "text-violet-600", sub_c: "text-violet-400", glow: "rgba(124,58,237,0.14)", top: "border-t-2 border-t-violet-500" },
-                    { label: "Compliance",     value: "97%", sub: "Excellent",     text: "text-emerald-600",sub_c: "text-emerald-400",glow: "rgba(16,185,129,0.14)",  top: "border-t-2 border-t-emerald-500" },
+                    { label: "Expiring Soon",  value: "7",   sub: "Within 30 days",text: "text-blue-700",  sub_c: "text-blue-500",  glow: "rgba(22,87,173,0.14)",  top: "border-t-2 border-t-blue-500" },
+                    { label: "Pending Docs",   value: "23",  sub: "Action needed", text: "text-blue-700", sub_c: "text-blue-500", glow: "rgba(22,87,173,0.14)", top: "border-t-2 border-t-blue-600" },
+                    { label: "Compliance",     value: "97%", sub: "Excellent",     text: "text-blue-700",sub_c: "text-blue-500",glow: "rgba(22,87,173,0.14)",  top: "border-t-2 border-t-blue-700" },
                   ].map((c) => (
                     <div key={c.label} className={`bg-white ${c.top} rounded-xl p-3.5`}
                       style={{ boxShadow: `0 4px 20px ${c.glow}, 0 1px 4px rgba(0,0,0,0.04)` }}>
@@ -111,10 +111,10 @@ export default function Hero() {
                     <span>Employee</span><span className="hidden md:block">Visa Type</span><span>Expiry</span><span>Status</span>
                   </div>
                   {[
-                    { name: "Sarah Thompson",  initials: "ST", grad: "from-[#1657ad] to-blue-400",   visa: "Skilled Worker", expiry: "12 Jun 2025", status: "Active",   pill: "bg-emerald-100 text-emerald-700 border-emerald-200" },
-                    { name: "Raj Patel",        initials: "RP", grad: "from-violet-500 to-purple-400", visa: "ICT",           expiry: "03 Jan 2025", status: "Expiring", pill: "bg-amber-100 text-amber-700 border-amber-200" },
-                    { name: "Maria Santos",     initials: "MS", grad: "from-pink-500 to-rose-400",    visa: "Skilled Worker", expiry: "28 Mar 2026", status: "Active",   pill: "bg-emerald-100 text-emerald-700 border-emerald-200" },
-                    { name: "Ahmed Al-Rashid",  initials: "AA", grad: "from-orange-500 to-amber-400", visa: "Global Talent", expiry: "15 Feb 2025", status: "Alert",    pill: "bg-red-100 text-red-600 border-red-200" },
+                    { name: "Sarah Thompson",  initials: "ST", grad: "from-[#1657ad] to-blue-400",   visa: "Skilled Worker", expiry: "12 Jun 2025", status: "Active",   pill: "bg-blue-100 text-blue-700 border-blue-200" },
+                    { name: "Raj Patel",        initials: "RP", grad: "from-blue-700 to-blue-400", visa: "ICT",           expiry: "03 Jan 2025", status: "Expiring", pill: "bg-blue-100 text-blue-700 border-blue-200" },
+                    { name: "Maria Santos",     initials: "MS", grad: "from-blue-600 to-blue-300",    visa: "Skilled Worker", expiry: "28 Mar 2026", status: "Active",   pill: "bg-blue-100 text-blue-700 border-blue-200" },
+                    { name: "Ahmed Al-Rashid",  initials: "AA", grad: "from-blue-800 to-blue-500", visa: "Global Talent", expiry: "15 Feb 2025", status: "Alert",    pill: "bg-slate-100 text-slate-700 border-slate-200" },
                   ].map((row) => (
                     <div key={row.name} className="grid grid-cols-4 px-4 py-3 border-b border-slate-50 last:border-0 hover:bg-blue-50/30 items-center transition-colors">
                       <div className="flex items-center gap-2">
